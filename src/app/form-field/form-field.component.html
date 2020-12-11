@@ -1,0 +1,7 @@
+<div [class.focus-within:border-blue-500]="!formFieldControl.invalid" class="relative border-b-2 ">
+  <ng-content select="[twInput]"></ng-content>
+  <label class="transition-transform absolute top-0 -z-1 duration-300 origin-0 text-gray-600">
+    <ng-content select="tw-label"></ng-content>
+  </label>
+</div>
+<ng-content select="[tw-hint]"></ng-content>
