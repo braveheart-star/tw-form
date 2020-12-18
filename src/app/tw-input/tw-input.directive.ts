@@ -22,6 +22,9 @@ export class TwInputDirective {
         this.invalid = this.control.invalid;
         console.log(this.invalid);
       });
+
+    console.log('form control name', this.formControlName)
+
   }
 
   ngOnDestory() {

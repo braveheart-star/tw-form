@@ -1,7 +1,95 @@
-<form [formGroup]="test" class="flex justify-center">
-  <tw-form-field class="w-64 pt-4 ml-4 ">
-    <textarea twInput formControlName="gender" type="text" name="username" placeholder=" "></textarea>
-    <tw-label>Username</tw-label>
-    <div tw-hint>form hint</div>
-  </tw-form-field>
-</form>
+<div class="flex justify-center">
+  <form [formGroup]="test">
+    <tw-form-field class="w-64 pt-4 ml-4 ">
+      <textarea twInput formControlName="gender" type="text" name="username" placeholder=" "></textarea>
+      <tw-label>Username</tw-label>
+      <div tw-hint>form hint</div>
+    </tw-form-field>
+  </form>
+</div>
+
+<div class="mt-24 ">
+  <h1 class="font-bold text-center">TW Buttons</h1>
+  <div class="flex items-center py-4 my-8 border-b">
+    <p class="mx-8 font-semibold text-gray-800 mr-14"> Basic :</p>
+    <div class="mx-3">
+      <button twButton>Basic</button>
+    </div>
+    <div class="mx-3">
+      <button twButton color="primary">Primary</button>
+    </div>
+    <div class="mx-3">
+      <button twButton color="accent">Accent</button>
+    </div>
+    <div class="mx-3">
+      <button twButton color="warn">Warn</button>
+    </div>
+    <div class="mx-3">
+      <button twButton color="disabled">Disabled</button>
+    </div>
+  </div>
+
+
+  <div class="flex items-center py-4 my-8 border-b">
+    <p class="px-4 py-2 mx-8 font-semibold text-gray-800 shadow-md mr-14"> Raised :</p>
+    <div class="mx-3">
+      <button twRaisedButton>Basic</button>
+    </div>
+    <div class="mx-3">
+      <button twRaisedButton color="primary">Primary</button>
+    </div>
+    <div class="mx-3">
+      <button twRaisedButton color="accent">Accent</button>
+    </div>
+    <div class="mx-3">
+      <button twRaisedButton color="warn">Warn</button>
+    </div>
+    <div class="mx-3">
+      <button twRaisedButton color="disabled">Disabled</button>
+    </div>
+  </div>
+
+
+  <div class="flex items-center py-4 my-8 border-b">
+    <p class="px-4 py-2 mx-8 font-semibold text-gray-800 border rounded mr-14"> Stroked :</p>
+    <div class="mx-3">
+      <button twStrokedButton>Basic</button>
+    </div>
+    <div class="mx-3">
+      <button twStrokedButton color="primary">Primary</button>
+    </div>
+    <div class="mx-3">
+      <button twStrokedButton color="accent">Accent</button>
+    </div>
+    <div class="mx-3">
+      <button twStrokedButton color="warn">Warn</button>
+    </div>
+    <div class="mx-3">
+      <button twStrokedButton color="disabled">Disabled</button>
+    </div>
+  </div>
+
+
+  <div class="flex items-center py-4 my-8 border-b">
+    <p class="px-4 py-2 mx-8 font-semibold text-gray-800 rounded mr-14"> Flat :</p>
+    <div class="mx-3">
+      <button twFlatButton>Basic</button>
+    </div>
+    <div class="mx-3">
+      <button twFlatButton color="primary">Primary</button>
+    </div>
+    <div class="mx-3">
+      <button twFlatButton color="accent">Accent</button>
+    </div>
+    <div class="mx-3">
+      <button twFlatButton color="warn">Warn</button>
+    </div>
+    <div class="mx-3">
+      <button twFlatButton color="disabled">Disabled</button>
+    </div>
+  </div>
+
+
+
+
+</div>
