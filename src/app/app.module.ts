@@ -5,12 +5,8 @@ import { AppComponent } from './app.component';
 import { FormFieldComponent } from './form-field/form-field.component';
 import { TwLabelDirective } from './tw-label/tw-label.directive';
 import { TwInputDirective } from './tw-input/tw-input.directive';
-import { TwButtonDirective } from './tw-button/tw-button.directive';
-import { TwRaisedButtonDirective } from './tw-raised-button/tw-raised-button.directive';
-import { TwStrokedButtonDirective } from './tw-stroked/tw-stroked-button.directive';
-import { TwFlatButtonDirective } from './tw-flat/tw-flat.directive';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TwButtonComponent } from './tw-button/tw-button.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormFieldComponent,
     TwLabelDirective,
     TwInputDirective,
-    TwButtonDirective,
-    TwRaisedButtonDirective,
-    TwStrokedButtonDirective,
-    TwFlatButtonDirective
+    TwButtonComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,16 @@
-tw-form-field {
-  &.tw-input-error {
-    input:focus-within ~ label,
-    label {
+app-form-field {
+  &.tw-input-error{
+    input:focus-within ~ label,label {
       @apply text-red-500;
     }
     textarea:focus-within ~ label {
       @apply text-red-500;
     }
-    div {
-      @apply border-red-500;
+    div{
+      @apply border-red-500
     }
   }
+
 
   display: block;
   @apply mt-4;
@@ -33,7 +33,7 @@ tw-form-field {
     @apply text-blue-500;
   }
 
-  [tw-hint] {
-    @apply text-gray-500 text-xs;
+  [tw-hint]{
+    @apply text-gray-500 text-xs
   }
 }

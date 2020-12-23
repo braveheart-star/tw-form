@@ -8,7 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'form-fields';
+
   test = new FormGroup({
-    gender: new FormControl('', Validators.required),
+    gender: new FormControl('',Validators.required),
   });
 }

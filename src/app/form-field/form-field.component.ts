@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 import { TwInputDirective } from '../tw-input/tw-input.directive';
 @Component({
-  selector: 'tw-form-field',
+  selector: 'app-form-field',
   templateUrl: './form-field.component.html',
   styleUrls: ['./form-field.component.scss'],
   encapsulation: ViewEncapsulation.None,
@@ -14,9 +14,8 @@ import { TwInputDirective } from '../tw-input/tw-input.directive';
     '[class.tw-input-error]': 'formFieldControl.invalid',
   },
 })
-
 export class FormFieldComponent implements OnInit {
-  constructor() { }
+  constructor() {}
   @ContentChild(TwInputDirective) formFieldControl;
 
   ngOnInit(): void {
@@ -24,6 +23,6 @@ export class FormFieldComponent implements OnInit {
   }
 
   ngAfterViewInit(): void {
-    console.log('after view init', this.formFieldControl);
+    console.log(this.formFieldControl);
   }
 }
