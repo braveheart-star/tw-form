@@ -1,14 +1,14 @@
 import { Component, ElementRef, OnInit, ViewEncapsulation } from '@angular/core';
 
 const BUTTON_HOST_ATTRIBUTES = [
-  'twButton',
-  'twFlatButton',
-  'twStrokedButton',
-  'twRaisedButton',
+  'tw-button',
+  'tw-flatButton',
+  'tw-strokedButton',
+  'tw-raisedButton',
 ];
 
 @Component({
-  selector: 'button[twButton], button[twFlatButton], button[twStrokedButton], button[twRaisedButton]',
+  selector: 'button[tw-button], button[tw-flatButton], button[tw-strokedButton], button[tw-raisedButton]',
   templateUrl: './tw-button.component.html',
   styleUrls: ['./tw-button.component.scss'],
   host: {
@@ -19,7 +19,7 @@ const BUTTON_HOST_ATTRIBUTES = [
   inputs: ['disabled', 'color'],
   encapsulation: ViewEncapsulation.None
 })
-export class TwButtonComponent{
+export class TwButtonComponent {
 
   constructor(private _elementRef: ElementRef) {
     const hostElement = this._getHostElement() as HTMLElement
@@ -30,9 +30,9 @@ export class TwButtonComponent{
     }
 
     hostElement.classList.add(hostElement.getAttribute('color'));
-   }
+  }
 
-   _getHostElement() {
+  _getHostElement() {
     return this._elementRef.nativeElement;
   }
 

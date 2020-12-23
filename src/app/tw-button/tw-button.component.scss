@@ -1,4 +1,4 @@
-.twButton {
+.tw-button {
   @apply hover:bg-gray-100;
   &.tw-button-disabled {
     @apply text-gray-400 bg-opacity-0;
@@ -14,12 +14,12 @@
     @apply text-red-500 hover:bg-red-100;
   }
 }
-.twFlatButton {
+.tw-flatButton {
   &.tw-button-disabled {
     @apply text-gray-400 bg-gray-100;
   }
   &.primary {
-    @apply text-white bg-blue-500 ;
+    @apply text-white bg-blue-500;
   }
 
   &.accent {
@@ -30,7 +30,7 @@
   }
 }
 
-.twStrokedButton {
+.tw-strokedButton {
   @apply border hover:bg-gray-100;
   &.tw-button-disabled {
     @apply text-gray-400 bg-opacity-0;
@@ -46,7 +46,7 @@
     @apply text-red-500 hover:bg-red-100;
   }
 }
-.twRaisedButton {
+.tw-raisedButton {
   @apply shadow-md hover:bg-gray-100;
   &.tw-button-disabled {
     @apply text-gray-400 bg-gray-100;
@@ -55,9 +55,9 @@
     @apply text-white bg-blue-500;
   }
   &.accent {
-    @apply text-white bg-pink-500 ;
+    @apply text-white bg-pink-500;
   }
   &.warn {
-    @apply text-white bg-red-500 ;
+    @apply text-white bg-red-500;
   }
 }
